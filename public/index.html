@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>XAT ALEX M5</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+
+<body>
+  <div id="app-container">
+    <aside id="sidebar">
+      <h1>Xat Sales Online</h1>
+      <ul id="rooms-list"></ul>
+      <div id="room-creation">
+        <input id="new-room-input" type="text" placeholder="Crea una sala Nueva" />
+        <button id="create-room">CREAR NUEVA SALA</button>
+      </div>
+      <div id="room-joining">
+        <input id="room-input" type="text" placeholder="Nombre de sala existente" />
+        <button id="join-room">UNIRSE A SALA EXISTENTE</button>
+      </div>
+    </aside>
+    <main id="chat-container">
+      <ul id="message-list"></ul>
+      <div id="message-input-container">
+        <input id="message-input" type="text" placeholder="Escribe un mensaje aquí '--' " />
+        <button id="send-message">Enviar Mensaje</button>
+      </div>
+    </main>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
+</body>
+
+</html>

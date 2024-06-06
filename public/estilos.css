@@ -1,0 +1,71 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, #a4af41b7, #a4af41b7);
+}
+#app-container {
+  display: flex;
+  width: 90%;
+  height: 90%;
+  max-width: 1200px;
+  border-radius: 0px;
+  background-color: #feffbeb7;
+  overflow: hidden;
+}
+#sidebar {
+  flex: 0 0 35%;
+  background-color: #222E50;
+  color: #fff;
+  padding: 60px;
+}
+#sidebar h1 {
+  margin-bottom: 20px;
+}
+#rooms-list li, button {
+  background-color: #ff0000;
+  color: white;
+  padding: 5px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+button:hover, #rooms-list li:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+#chat-container {
+  flex: 1;
+  padding: 20px;
+}
+#message-list li {
+  background-color: #372d92;
+  color: white;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+#message-input-container {
+  display: flex;
+  gap: 10px;
+}
+#send-message {
+  background-color: #e74c3c;
+}
+#send-message:hover {
+  background-color: #c0392b;
+}
+input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 15px;
+  border: black;
+  border-radius: 8px;
+}
